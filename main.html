@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <title></title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="" id="btn task">Task</a>
+                <!-- <a href="" id="btn mood">Mood</a> -->
+                <a href="" id="btn train">Train</a>
+                <span class="task-cont">Work: <span class="work count">0</span></span>
+                <span class="task-cont">Personal: <span class="personal count">0</span></span>           
+            </nav>
+            <!-- <div class="welcome_block">
+                <h1>Welcome</h1>
+            </div> -->
+        </header>
+        <main>
+            <div class="tasks">
+                <!-- <div class="filter-task"> -->
+                    <input type="checkbox" id="work-box" checked>
+                    <label for="work-box">
+                        <div class="tag work pos-abs">Work</div>
+                    </label>
+                    <input type="checkbox" id="personal-box" checked>
+                    <label for="personal-box">
+                        <div class="tag personal pos-abs">Personal</div>
+                    </label>
+                <!-- </div> -->
+                    <div class="note">
+                        To do web
+                        <div class="tag work">Work</div>
+                    </div>
+                    <div class="note">
+                        Read documentation
+                        <div class="tag work">Work</div>
+                    </div>
+                    <div class="note">
+                        Read book
+                        <div class="tag personal">Work</div>
+                    </div>
+                    <div class="note">
+                        Go to street
+                        <div class="tag personal">Work</div>
+                    </div>
+                    <div class="note">
+                        To do web
+                        <div class="tag work">Work</div>
+                    </div>
+                    <div class="note">
+                        Read documentation
+                        <div class="tag work">Work</div>
+                    </div>
+                    <div class="note">
+                        Read book
+                        <div class="tag personal">Work</div>
+                    </div>
+                    <div class="note">
+                        Go to street
+                        <div class="tag personal">Work</div>
+                    </div>
+                </div>
+            
+            <div class="mood">
+                
+                <!-- <div class="mood txt">
+                    <form>
+                        <textarea></textarea>
+                    </form>
+                </div> -->
+                <div class="calendar">
+                    <div class="header">
+                      <button id="prev">←</button>
+                      <h3 id="monthYear"></h3>
+                      <button id="next">→</button>
+                    </div>
+                  
+                    <div class="days">
+                      <div>Пн</div><div>Вт</div><div>Ср</div>
+                      <div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div>
+                    </div>
+                  
+                    <div class="dates" id="dates"></div>
+                  
+                    <div class="mood-picker" id="moodPicker">
+                      <p>Выбери настроение:</p>
+                      <button data-mood="happy">😊 Хорошее</button>
+                      <button data-mood="normal">😐 Нормальное</button>
+                      <button data-mood="sad">😢 Грустное</button>
+                      <button data-mood="angry">😡 Злое</button>
+                    </div>
+                  </div>
+            </div>
+            
+        </main>
+        <footer><div class="add task">
+                
+                    <lable>Title task: <input type="text" id="inputTitle"></lable><br>
+                    <!-- <textarea></textarea><br> -->
+                    <lable>Date task: <input type="date" id="inputDate"></lable><br>
+                    <label>Статус задачи:</label>
+                    <select id="noteTag">
+                        <option value="work">Work</option>
+                        <option value="persoanl">Private</option>
+                    </select>
+
+                    <!-- <br>
+                    <label>Приоритет задачи:</label>
+                    <select>
+                        <option>Importent</option>
+                        <option>Simple</option>
+                    </select><br> -->
+                    <button onclick="addNote()">Add</button>
+                
+            </div></footer>
+        <script src="script.js"></script>
+    </body>
+</html>
